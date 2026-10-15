@@ -366,6 +366,7 @@ ecs_system(gr_hud_consolidate, EcsResInOut(GrHud), EcsResIn(GrRun), EcsResIn(GrF
   h->magazine = wp->magazine;
   h->reloading = wp->reloading;
   h->swapping = wp->swapping_magazine;
+  h->detonators = ecs_resource_get(it->world, KmDetonators)->count;
   h->ammo_low = !wp->reloading && (f32)wp->ammo <= (f32)wp->magazine * 0.25f;
   h->reload_show = wp->reloading || h->ammo_low;
   h->hostiles = restarted ? 0 : wv->remaining;

@@ -55,6 +55,7 @@
 #include "km_droids.h"
 #include "proving_grounds/km_droids.gen.h"
 #include "km_air.h"
+#include "km_detonator.h"
 // player, camera, input
 #include "gr_player.h"
 #include "proving_grounds/gr_player.gen.h"
@@ -103,6 +104,7 @@ ECS_COMPONENT_TYPEDEF(AppMemory);
 #include "gr_fx_main.c"
 #include "km_squad.c"
 #include "km_air.c"
+#include "km_detonator.c"
 
 #if GR_EDITOR
 #include "gr_editor.c"
@@ -163,6 +165,7 @@ HZ_APP_API void app_init(AppMemory *memory) {
   km_droids_init(w, assets);
   km_squad_init(w);
   km_air_init(w, assets);
+  km_detonator_init(w);
   gr_weapon_init(w);
   gr_audio_init(w);
   // the UI lives in its own arena
@@ -231,6 +234,7 @@ HZ_APP_API void app_update_and_render(AppMemory *memory) {
     km_droids_schedule(w); // the walkers' limbs, before the transforms
     km_storm_schedule(w);  // lightning and thunder
     km_air_schedule(w);    // the air battle overhead
+    km_detonator_schedule(w); // G: thermal detonators, after the drones and the player
     gr_player_schedule_intake(w);
     ecs_schedule(w, gr_view_system);
     gr_flow_schedule_consolidate(w); // run totals, radar, HUD model

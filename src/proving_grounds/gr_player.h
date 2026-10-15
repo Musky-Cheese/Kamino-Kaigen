@@ -45,6 +45,7 @@ typedef struct GrInput {
   b32 aim_pressed;
   b32 reload_pressed; // R
   b32 swap_pressed;   // E
+  b32 throw_pressed;  // G: a thermal detonator
   InputPointerLock pointer_lock; // the lock and its edges this frame
   b32 touch;          // the last input was a touch: the on-screen controls drive the run, no pointer lock
   b32 captured;       // the run takes input: the pointer is locked, or touch

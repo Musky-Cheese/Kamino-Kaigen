@@ -88,6 +88,7 @@ void gr_input_collect(GrInput *in, GrTouch *touch, InputSystem *input, u32 state
   in->jump_pressed = input->buttons[KEY_SPACE].pressed_this_frame;
   in->reload_pressed = input->buttons[KEY_R].pressed_this_frame;
   in->swap_pressed = input->buttons[KEY_E].pressed_this_frame;
+  in->throw_pressed = input->buttons[KEY_G].pressed_this_frame;
   in->pause_pressed = false;
 
   // the on-screen controls exist only in a run; outside it every touch belongs to the menus

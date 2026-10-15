@@ -162,6 +162,7 @@ typedef struct GrHud {
   u32 magazine;
   b32 swapping;
   b32 ammo_low;
+  u32 detonators; // thermal detonators carried
   u32 weapon;
   // menus
   u32 best;

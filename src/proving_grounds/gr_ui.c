@@ -718,6 +718,19 @@ hz_internal void gr_draw_ammo(GrUi *u, const GrHud *h, const GrUiView *v) {
                 .pointer_capture_mode = GR_PASS}) {
       ui_text(gr_weapon_name(h->weapon), gr_in_panel(gr_font(u, 11.0f, UI_FONT_REGULAR, GR_CYAN, 11.0f * 0.3f)));
     }
+    // the thermal detonators carried: a pip each, dim once thrown
+    ui_element({.layout = {.sizing = {.width = ui_sizing_grow(0)}, .margin = {.top = 6}, .child_gap = 5,
+                           .child_alignment = {UI_ALIGN_X_RIGHT, UI_ALIGN_Y_CENTER}},
+                .pointer_capture_mode = GR_PASS}) {
+      ui_text(ui_string("DETONATORS  G"), gr_in_panel(gr_font(u, 10.0f, UI_FONT_REGULAR, GR_HUD_WHITE, 10.0f * 0.3f)));
+      for (u32 i = 0; i < KM_DET_CARRY; i++) {
+        b32 have = i < h->detonators;
+        ui_element({.layout = {.sizing = {.width = ui_sizing_fixed(10.0f), .height = ui_sizing_fixed(10.0f)}},
+                    .background_color = have ? (HzUIColor){255, 181, 71, 255} : (HzUIColor){255, 255, 255, 50},
+                    .corner_radius = ui_corner_radius(5.0f),
+                    .pointer_capture_mode = GR_PASS}) {}
+      }
+    }
   }
 }
 
