@@ -23,30 +23,30 @@ properties 13
   name "color"
   type MAT_PROP_COLOR4
   c4
-    r 0.15170372
-    g 0.15170372
-    b 0.15170372
+    r 0.3491902
+    g 0.3491902
+    b 0.3491902
     a 1.000000
 
   name "metallic"
   type MAT_PROP_FLOAT
-  f 0.000000
+  f 1.000000
 
   name "smoothness"
   type MAT_PROP_FLOAT
-  f 0.700000
+  f 0.39999998
 
   name "emission_color"
   type MAT_PROP_COLOR4
   c4
-    r 0.200000
-    g 0.8823529
+    r 0.5838315
+    g 0.7977377
     b 1.000000
     a 1.000000
 
   name "emission_intensity"
   type MAT_PROP_FLOAT
-  f 117964.804688
+  f 39321.601563
 
   name "panel"
   type MAT_PROP_COLOR4

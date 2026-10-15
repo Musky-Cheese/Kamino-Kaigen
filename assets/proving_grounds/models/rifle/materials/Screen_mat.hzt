@@ -23,9 +23,9 @@ properties 3
   name "color"
   type MAT_PROP_COLOR4
   c4
-    r 0.062745094
-    g 0.078431375
-    b 0.09411765
+    r 0.24780051
+    g 0.24780051
+    b 0.27169976
     a 1.000000
 
   name "emission_intensity"

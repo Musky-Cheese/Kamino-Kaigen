@@ -10,6 +10,7 @@ node clonerig.mjs  <web>/clone.glb  ../../assets/kamino/models/clone/clone.glb  
 node fit.mjs <web>/gunship.glb ../../assets/kamino/models/vehicles/gunship.glb Gunship 17.5 0 180 -13.64
 node fit.mjs <web>/lander.glb  ../../assets/kamino/models/vehicles/lander.glb  Lander 22 0 -90 0
 node fit.mjs <web>/vulture.glb ../../assets/kamino/models/vehicles/vulture.glb Vulture 8 0 0 0 center
+node dc15a.mjs ../../assets/proving_grounds/models/rifle/rifle.glb                            # DC-15A: boxes under the template rifle's node contract
 ```
 
 After converting, run `hz\hzbuild cook` twice (generated materials cook on the second pass).

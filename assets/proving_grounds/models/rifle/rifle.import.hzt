@@ -3,7 +3,7 @@ version 22
 ---
 rig_mode ""
 import_scale 1.000000
-shader_override 5
+shader_override 6
   material "Screen"
   shader "/shaders/proving_grounds/gr_screen.glsl"
 
@@ -17,5 +17,7 @@ shader_override 5
   shader "/shaders/proving_grounds/gr_surface.glsl"
 
   material "Emit_Status"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+  material "DC_Dark"
   shader "/shaders/proving_grounds/gr_surface.glsl"
 pass_override 0

@@ -23,18 +23,18 @@ properties 13
   name "color"
   type MAT_PROP_COLOR4
   c4
-    r 1.000000
-    g 1.000000
-    b 1.000000
+    r 0.935741
+    g 0.94527686
+    b 0.9546872
     a 1.000000
 
   name "metallic"
   type MAT_PROP_FLOAT
-  f 1.000000
+  f 0.150000
 
   name "smoothness"
   type MAT_PROP_FLOAT
-  f 0.000000
+  f 0.550000
 
   name "emission_color"
   type MAT_PROP_COLOR4
@@ -74,15 +74,15 @@ properties 13
 
   name "albedo"
   type MAT_PROP_TEXTURE
-  texture "/proving_grounds/models/rifle/textures/rifle_base.hzt" TextureBlobAsset
+  texture "" TextureBlobAsset
 
   name "normal_map"
   type MAT_PROP_TEXTURE
-  texture "/proving_grounds/models/rifle/textures/rifle_normal.hzt" TextureBlobAsset
+  texture "" TextureBlobAsset
 
   name "orm_map"
   type MAT_PROP_TEXTURE
-  texture "/proving_grounds/models/rifle/textures/rifle_orm.hzt" TextureBlobAsset
+  texture "" TextureBlobAsset
 
   name "emission_map"
   type MAT_PROP_TEXTURE
