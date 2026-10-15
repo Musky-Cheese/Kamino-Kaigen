@@ -30,11 +30,11 @@ properties 13
 
   name "metallic"
   type MAT_PROP_FLOAT
-  f 1.000000
+  f 0.000000
 
   name "smoothness"
   type MAT_PROP_FLOAT
-  f 0.000000
+  f 0.14999998
 
   name "emission_color"
   type MAT_PROP_COLOR4

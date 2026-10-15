@@ -171,6 +171,19 @@ root.setDefaultScene(scene);
 for (const sk of root.listSkins()) sk.dispose();
 for (const a of root.listAnimations()) a.dispose();
 for (const m of root.listMaterials()) if (!m.getName().startsWith('CT_')) m.setName('CT_' + m.getName());
+// Phase I plastoid is a dielectric: the export's metallic factor turned the white armour into a dark rough metal at night
+for (const m of root.listMaterials()) {
+  const n = m.getName();
+  if (n === 'CT_Clone_P1_Armor' || n === 'CT_Helmet_Phase1') {
+    m.setMetallicFactor(0).setRoughnessFactor(0.4).setBaseColorFactor([1, 1, 1, 1]);
+    // the export baked its shading into a mid-grey albedo: lift it to plastoid white, keeping the markings' contrast
+    const tex = m.getBaseColorTexture();
+    if (tex) {
+      const png = await sharp(Buffer.from(tex.getImage())).linear(1.75, 8).png().toBuffer();
+      tex.setImage(new Uint8Array(png)).setMimeType('image/png');
+    }
+  } else if (n === 'CT_Undersuit') m.setMetallicFactor(0).setRoughnessFactor(0.85);
+}
 for (const tex of root.listTextures()) {
   if (tex.getMimeType() !== 'image/webp') continue;
   const png = await sharp(Buffer.from(tex.getImage())).png().toBuffer();
