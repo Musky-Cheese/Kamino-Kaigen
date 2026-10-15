@@ -54,6 +54,7 @@
 #include "km_world.h"
 #include "km_droids.h"
 #include "proving_grounds/km_droids.gen.h"
+#include "km_air.h"
 // player, camera, input
 #include "gr_player.h"
 #include "proving_grounds/gr_player.gen.h"
@@ -101,6 +102,7 @@ ECS_COMPONENT_TYPEDEF(AppMemory);
 #include "gr_fx_labels.c"
 #include "gr_fx_main.c"
 #include "km_squad.c"
+#include "km_air.c"
 
 #if GR_EDITOR
 #include "gr_editor.c"
@@ -160,6 +162,7 @@ HZ_APP_API void app_init(AppMemory *memory) {
   gr_drones_init(w, assets);
   km_droids_init(w, assets);
   km_squad_init(w);
+  km_air_init(w, assets);
   gr_weapon_init(w);
   gr_audio_init(w);
   // the UI lives in its own arena
@@ -227,11 +230,13 @@ HZ_APP_API void app_update_and_render(AppMemory *memory) {
     km_squad_schedule(w);  // the clone squad: after the droids' field and bolt hits
     km_droids_schedule(w); // the walkers' limbs, before the transforms
     km_storm_schedule(w);  // lightning and thunder
+    km_air_schedule(w);    // the air battle overhead
     gr_player_schedule_intake(w);
     ecs_schedule(w, gr_view_system);
     gr_flow_schedule_consolidate(w); // run totals, radar, HUD model
     gr_fx_schedule(w);               // after every producer's GrFxOut writes
     km_squad_schedule_fx(w);         // the squad's tracers
+    km_air_schedule_fx(w);           // the air battle's tracers and bursts
     ecs_transform_schedule(w);
     gr_level_schedule_gather(w); // after the transforms: the scene's sites at their world poses
     ecs_camera_schedule(w, &(EcsCameraScheduleDesc){.transform_sync_off = true}); // the rig and the view write Camera
