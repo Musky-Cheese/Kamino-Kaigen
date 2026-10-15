@@ -1,0 +1,96 @@
+type MaterialBlobAsset
+version 23
+---
+shader_source "/shaders/proving_grounds/gr_surface.glsl" ShaderVariantBlobAsset
+depth_test true
+depth_write true
+depth_compare GPU_COMPARE_GREATER_EQUAL
+cull_mode GPU_CULL_BACK
+is_transparent false
+alpha_cutoff false
+alpha_to_coverage false
+blend
+  enabled false
+  src_factor GPU_BLEND_ZERO
+  dst_factor GPU_BLEND_ZERO
+  op GPU_BLEND_OP_ADD
+  src_factor_alpha GPU_BLEND_ZERO
+  dst_factor_alpha GPU_BLEND_ZERO
+  op_alpha GPU_BLEND_OP_ADD
+depth_bias 0.000000
+slope_scaled_depth_bias 0.000000
+properties 13
+  name "color"
+  type MAT_PROP_VEC4
+  v4 0.005182 0.005182 0.005182 1.000000
+
+  name "metallic"
+  type MAT_PROP_FLOAT
+  f 0.000000
+
+  name "smoothness"
+  type MAT_PROP_FLOAT
+  f 0.600000
+
+  name "emission_color"
+  type MAT_PROP_VEC4
+  v4 1.000000 0.854993 0.723055 1.000000
+
+  name "emission_intensity"
+  type MAT_PROP_FLOAT
+  f 196608.000000
+
+  name "panel"
+  type MAT_PROP_VEC4
+  v4 2.000000 1.000000 0.012000 0.300000
+
+  name "detail"
+  type MAT_PROP_VEC4
+  v4 0.060000 0.000000 0.000000 0.000000
+
+  name "secondary_color"
+  type MAT_PROP_COLOR4
+  c4
+    r 1.000000
+    g 0.450786
+    b 0.000000
+    a 1.000000
+
+  name "albedo"
+  type MAT_PROP_TEXTURE
+  texture "" TextureBlobAsset
+
+  name "normal_map"
+  type MAT_PROP_TEXTURE
+  texture "" TextureBlobAsset
+
+  name "orm_map"
+  type MAT_PROP_TEXTURE
+  texture "" TextureBlobAsset
+
+  name "emission_map"
+  type MAT_PROP_TEXTURE
+  texture "" TextureBlobAsset
+
+  name "gr_noise"
+  type MAT_PROP_TEXTURE
+  texture "" TextureBlobAsset
+keywords 6
+  name "HZ_RENDERER_SHADOWS"
+  value ""
+
+  name "HZ_RENDERER_LIGHTING_CLUSTERS"
+  value ""
+
+  name "HZ_RENDERER_IBL"
+  value ""
+
+  name "HZ_RENDERER_GTAO"
+  value ""
+
+  name "HZ_RENDERER_FOG"
+  value ""
+
+  name "HZ_RENDERER_DECALS"
+  value ""
+passes 0

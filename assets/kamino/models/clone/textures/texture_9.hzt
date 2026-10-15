@@ -1,0 +1,11 @@
+type TextureBlobAsset
+version 23
+---
+image "/kamino/models/clone/textures/texture_9" u8
+format TEX_FORMAT_BC5
+width 0
+height 0
+is_srgb false
+has_alpha false
+has_alpha_cutoff false
+max_size 0

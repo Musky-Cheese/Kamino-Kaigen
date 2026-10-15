@@ -1,0 +1,18 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 4
+  material "Screen"
+  shader "/shaders/proving_grounds/gr_screen.glsl"
+
+  material "breacher_Atlas"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Vents"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Status"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+pass_override 0

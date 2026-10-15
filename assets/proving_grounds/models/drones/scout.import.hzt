@@ -1,0 +1,21 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 5
+  material "drones_Atlas"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Energy"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Eye"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Pupil"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Thrust"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+pass_override 0

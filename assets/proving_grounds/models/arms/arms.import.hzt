@@ -1,0 +1,9 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 1
+  material "Arms_Outfit"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+pass_override 0

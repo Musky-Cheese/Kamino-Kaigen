@@ -1,0 +1,130 @@
+type PrefabBlobAsset
+version 22
+---
+entity 7741299845143760341
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "pedestal"
+
+component EcsVisibility
+  visible true
+  casts_shadow true
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/models/pedestal/pedestal/pedestal.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsSubMeshSpawned
+  _ 0
+
+component EcsStaticShadow
+  _ 0
+
+component GrPedestal
+  index 0
+  weapon 0
+  top 1.000000
+
+entity 4460825887676475950
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.500000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 7741299845143760341
+
+component EntityName
+  name "cylinder_collider"
+
+component GrCylinderCollider
+  radius_top 0.420000
+  radius_bottom 0.420000
+  height 1.000000
+  segments 8
+
+entity 11562288106693908579
+
+component EcsSubMesh
+  model 7741299845143760341
+  slot 1
+  name "Housing"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 7741299845143760341
+
+component EntityName
+  name "Housing"
+
+entity 9399000597837471770
+
+component EcsSubMesh
+  model 7741299845143760341
+  slot 0
+  name "Glow"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 7741299845143760341
+
+component EntityName
+  name "Glow"

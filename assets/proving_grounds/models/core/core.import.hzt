@@ -1,0 +1,15 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 3
+  material "core_Atlas"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Light"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Ring"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+pass_override 0

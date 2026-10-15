@@ -1,0 +1,216 @@
+type PrefabBlobAsset
+version 22
+---
+entity 18197639617216036281
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "jump_pad"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/models/jumppad/jumppad/jumppad.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsSubMeshSpawned
+  _ 0
+
+component GrJumpPad
+  index 0
+  target
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  apex 6.200000
+  radius 1.200000
+
+entity 13290675264043386895
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 18197639617216036281
+
+component EntityName
+  name "pad_stripes"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/pad_stripes/pad_stripes.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_hazard.hza" MaterialBlobAsset
+
+entity 3407112065413959134
+
+component LocalTransform
+  position
+    x 0.000000
+    y 1.730000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 18197639617216036281
+
+component EntityName
+  name "pad_column"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/pad_column/pad_column.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_light_column.hza" MaterialBlobAsset
+
+entity 5800528820589654822
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.125000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 18197639617216036281
+
+component EntityName
+  name "pad_disc"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/pad_disc/pad_disc.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_pad_disc.hza" MaterialBlobAsset
+
+entity 11778045798841771102
+
+component EcsSubMesh
+  model 18197639617216036281
+  slot 1
+  name "Emit_Pad"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 18197639617216036281
+
+component EntityName
+  name "Emit_Pad"
+
+entity 11392242856543291776
+
+component EcsSubMesh
+  model 18197639617216036281
+  slot 0
+  name "jumppad_Atlas"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 18197639617216036281
+
+component EntityName
+  name "jumppad_Atlas"

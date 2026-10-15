@@ -1,0 +1,24 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 6
+  material "Screen"
+  shader "/shaders/proving_grounds/gr_screen.glsl"
+
+  material "lancer_Atlas"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Coil"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Lens"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Cell"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Emit_Vents"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+pass_override 0

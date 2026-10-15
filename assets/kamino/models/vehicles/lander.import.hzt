@@ -1,0 +1,57 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 17
+  material "Lander_Object04_F1"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_material"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Line17_FAC1"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_material_3"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Cylinder4"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Cylinder2"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Sphere01_F1"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Sphere05_F1"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_material_17"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_material_35"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Color_006"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Color_008"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Color_I20"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Color_005"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Color_007"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Color_004"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "Lander_Color_F14"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+pass_override 0

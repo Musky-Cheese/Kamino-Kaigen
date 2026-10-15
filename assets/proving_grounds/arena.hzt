@@ -1,0 +1,8 @@
+type SceneBlobAsset
+version 22
+---
+scene_dir "proving_grounds/arena"
+chunks 1
+  chunk "proving_grounds/arena/chunk_0.hzt" EntityChunkBlobAsset
+  bounds_min -70.000000 -45.000000 -270.000000
+  bounds_max 70.000000 45.000000 90.000000

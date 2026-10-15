@@ -1,0 +1,17 @@
+type HzProjectConfig
+version 1
+---
+name kamino-fps
+id a04a8d852ba69b3c28e67101413b216e
+template_name proving-grounds
+engine hz
+src_roots 1 src
+asset_roots 1 assets
+shader_roots 1 shaders
+ios_bundle_name ProvingGrounds
+ios_bundle_id com.kaigen.template.proving-grounds
+engine_version 0.6.2.002-beta
+publish
+  product_name "Kamino"
+modules 1 gameplay_blocks
+orientation landscape

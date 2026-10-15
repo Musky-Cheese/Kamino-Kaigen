@@ -1,0 +1,13 @@
+{
+  "name": "kamino-model-tools",
+  "private": true,
+  "type": "module",
+  "description": "Converts the web game's meshopt/WebP models into the .glb files under assets/kamino (see README.md)",
+  "dependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "meshoptimizer": "1.2.0",
+    "sharp": "0.35.5"
+  }
+}

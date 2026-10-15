@@ -1,0 +1,36 @@
+type MaterialBlobAsset
+version 23
+---
+shader_source "/shaders/proving_grounds/gr_energy.glsl" ShaderVariantBlobAsset
+depth_test true
+depth_write false
+depth_compare GPU_COMPARE_GREATER_EQUAL
+cull_mode GPU_CULL_NONE
+is_transparent true
+alpha_cutoff false
+alpha_to_coverage false
+blend
+  enabled true
+  src_factor GPU_BLEND_ONE
+  dst_factor GPU_BLEND_ONE
+  op GPU_BLEND_OP_ADD
+  src_factor_alpha GPU_BLEND_ZERO
+  dst_factor_alpha GPU_BLEND_ONE
+  op_alpha GPU_BLEND_OP_ADD
+depth_bias 0.000000
+slope_scaled_depth_bias 0.000000
+properties 2
+  name "color"
+  type MAT_PROP_VEC4
+  v4 0.028426 0.686685 1.000000 1.000000
+
+  name "params"
+  type MAT_PROP_VEC4
+  v4 1.000000 0.000000 0.000000 0.000000
+keywords 2
+  name "GR_LIGHT_COLUMN"
+  value ""
+
+  name "HZ_RENDERER_TRANSPARENT"
+  value ""
+passes 0

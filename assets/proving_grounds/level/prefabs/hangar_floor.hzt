@@ -1,0 +1,83 @@
+type PrefabBlobAsset
+version 22
+---
+entity 818134251244660805
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "hangar_floor"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/hangar_floor/hangar_floor.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_floor_plain.hza" MaterialBlobAsset
+
+entity 7242125351860243177
+
+component LocalTransform
+  position
+    x 0.000000
+    y -0.500000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 21.000000
+        y 0.500000
+        z 31.000000
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 818134251244660805
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0

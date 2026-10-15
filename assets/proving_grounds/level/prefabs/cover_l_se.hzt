@@ -1,0 +1,225 @@
+type PrefabBlobAsset
+version 22
+---
+entity 6623263579465813637
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "cover_l_se"
+
+component EcsVisibility
+  visible true
+  casts_shadow true
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/cover_l_se/cover_l_se.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsSubMeshSpawned
+  _ 0
+
+component EcsStaticShadow
+  _ 0
+
+entity 18079985780565241542
+
+component EcsSubMesh
+  model 6623263579465813637
+  slot 2
+  name "gr_orange"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 6623263579465813637
+
+component EntityName
+  name "gr_orange"
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_orange.hza" MaterialBlobAsset
+
+entity 16931568056205549915
+
+component EcsSubMesh
+  model 6623263579465813637
+  slot 1
+  name "gr_wall_dark"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 6623263579465813637
+
+component EntityName
+  name "gr_wall_dark"
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_wall_dark.hza" MaterialBlobAsset
+
+entity 7369675778409732993
+
+component EcsSubMesh
+  model 6623263579465813637
+  slot 0
+  name "gr_wall_white"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 6623263579465813637
+
+component EntityName
+  name "gr_wall_white"
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_wall_white.hza" MaterialBlobAsset
+
+entity 7038558238333646253
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.625000
+    z 2.250000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 0.39999962
+        y 0.625000
+        z 2.250000
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 6623263579465813637
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0
+
+entity 16004894863664607627
+
+component LocalTransform
+  position
+    x 2.250000
+    y 0.625000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 2.250000
+        y 0.625000
+        z 0.39999962
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 6623263579465813637
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0

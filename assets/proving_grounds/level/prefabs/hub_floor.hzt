@@ -1,0 +1,86 @@
+type PrefabBlobAsset
+version 22
+---
+entity 8798498677540558333
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "hub_floor"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/hub_floor/hub_floor.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrNoMirror
+  _ 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_floor_main.hza" MaterialBlobAsset
+
+entity 8311590907394928566
+
+component LocalTransform
+  position
+    x 0.000000
+    y -0.500000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 25.000000
+        y 0.500000
+        z 25.000000
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 8798498677540558333
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0

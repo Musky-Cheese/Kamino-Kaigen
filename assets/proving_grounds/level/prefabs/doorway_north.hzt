@@ -1,0 +1,419 @@
+type PrefabBlobAsset
+version 22
+---
+entity 5525801854382808333
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "doorway_north"
+
+component EcsVisibility
+  visible true
+  casts_shadow true
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/doorway_north/doorway_north.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsSubMeshSpawned
+  _ 0
+
+component EcsStaticShadow
+  _ 0
+
+entity 7485738264942690223
+
+component EcsSubMesh
+  model 5525801854382808333
+  slot 2
+  name "gr_light_orange_noshadow"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "gr_light_orange_noshadow"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_light_orange.hza" MaterialBlobAsset
+
+entity 4942146502532461124
+
+component EcsSubMesh
+  model 5525801854382808333
+  slot 1
+  name "gr_hazard_noshadow"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "gr_hazard_noshadow"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_hazard.hza" MaterialBlobAsset
+
+entity 5504134257266316015
+
+component EcsSubMesh
+  model 5525801854382808333
+  slot 0
+  name "gr_dark_metal"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "gr_dark_metal"
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_dark_metal.hza" MaterialBlobAsset
+
+entity 18220035171770206158
+
+component LocalTransform
+  position
+    x 0.000000
+    y 5.225000
+    z -1.1749992
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 3.000000
+        y 0.2249999
+        z 0.17500019
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0
+
+entity 17303891950623149533
+
+component LocalTransform
+  position
+    x 3.2250004
+    y 2.725000
+    z -1.1749992
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 0.22500038
+        y 2.725000
+        z 0.17500019
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0
+
+entity 9091053994968282802
+
+component LocalTransform
+  position
+    x -3.2250004
+    y 2.725000
+    z -1.1749992
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 0.2249999
+        y 2.725000
+        z 0.17500019
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0
+
+entity 15617793720069275184
+
+component LocalTransform
+  position
+    x 0.000000
+    y 5.225000
+    z 0.17499924
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 3.000000
+        y 0.2249999
+        z 0.17500019
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0
+
+entity 17493952739164327010
+
+component LocalTransform
+  position
+    x 3.2250004
+    y 2.725000
+    z 0.17499924
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 0.22500038
+        y 2.725000
+        z 0.17500019
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0
+
+entity 343613094891900300
+
+component LocalTransform
+  position
+    x -3.2250004
+    y 2.725000
+    z 0.17499924
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 0.2249999
+        y 2.725000
+        z 0.17500019
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 5525801854382808333
+
+component EntityName
+  name "box_collider"
+
+component GrWalkable
+  _ 0

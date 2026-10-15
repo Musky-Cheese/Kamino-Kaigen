@@ -1,0 +1,48 @@
+type PrefabBlobAsset
+version 22
+---
+entity 3594302188991073360
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "sign_caution_a"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/sign_340x130/sign_340x130.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_sign.hza" MaterialBlobAsset
+
+component GrSignSite
+  kind 2
+  width 3.400000
+  height 1.300000
+  density 128.000000
+  intensity 2.500000
+  emissive
+    x 1.000000
+    y 1.000000
+    z 1.000000

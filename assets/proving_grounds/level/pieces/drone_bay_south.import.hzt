@@ -1,0 +1,7 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 0
+pass_override 0

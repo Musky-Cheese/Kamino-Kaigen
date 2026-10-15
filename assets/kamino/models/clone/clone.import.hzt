@@ -1,0 +1,21 @@
+type ModelImportSettings
+version 22
+---
+rig_mode ""
+import_scale 1.000000
+shader_override 5
+  material "CT_Clone_P1_Armor"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "CT_Undersuit"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "CT_Helmet_Phase1"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "CT_DC15"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+
+  material "CT_DC15_Dark"
+  shader "/shaders/proving_grounds/gr_surface.glsl"
+pass_override 0

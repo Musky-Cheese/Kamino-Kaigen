@@ -1,0 +1,424 @@
+type PrefabBlobAsset
+version 22
+---
+entity 17754226424340918049
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EntityName
+  name "core"
+
+component EcsVisibility
+  visible true
+  casts_shadow true
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/models/core/core/core.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsSubMeshSpawned
+  _ 0
+
+component EcsStaticShadow
+  _ 0
+
+entity 16998870792178783441
+
+component LocalTransform
+  position
+    x 0.000000
+    y 8.680000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "cylinder_collider"
+
+component GrCylinderCollider
+  radius_top 1.760000
+  radius_bottom 1.760000
+  height 0.560000
+  segments 12
+
+entity 16557092702652244404
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.530000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "cylinder_collider"
+
+component GrCylinderCollider
+  radius_top 1.620000
+  radius_bottom 1.620000
+  height 0.180000
+  segments 12
+
+entity 3870999914354983563
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.22000003
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "cylinder_collider"
+
+component GrCylinderCollider
+  radius_top 2.300000
+  radius_bottom 2.300000
+  height 0.440000
+  segments 12
+
+entity 8109236605764192229
+
+component LocalTransform
+  position
+    x 0.000000
+    y 4.600000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "energy_column"
+
+component EcsVisibility
+  visible true
+  casts_shadow false
+  sort_priority 0
+
+component EcsModelRef
+  model "proving_grounds/level/pieces/energy_column/energy_column.hza" ModelBlobAsset
+  extra_lods 0
+
+component GrProbeCapture
+  _ 0
+
+component EcsMaterial
+  material "proving_grounds/materials/level/gr_energy_column.hza" MaterialBlobAsset
+
+entity 14135384498076773679
+
+component EcsSubMesh
+  model 17754226424340918049
+  slot 5
+  name "Emit_Ring"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "Emit_Ring"
+
+component GrCoreRing
+  index 0
+  pivot
+    x 0.000000
+    y 3.300000
+    z 0.000000
+  rest
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+
+entity 11515113995304059231
+
+component EcsSubMesh
+  model 17754226424340918049
+  slot 4
+  name "core_Atlas"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "core_Atlas"
+
+component GrCoreRing
+  index 0
+  pivot
+    x 0.000000
+    y 3.300000
+    z 0.000000
+  rest
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+
+entity 14710283292582883758
+
+component EcsSubMesh
+  model 17754226424340918049
+  slot 3
+  name "Emit_Ring"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "Emit_Ring"
+
+component GrCoreRing
+  index 1
+  pivot
+    x 0.000000
+    y 6.100000
+    z 0.000000
+  rest
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+
+entity 17276568579784165006
+
+component EcsSubMesh
+  model 17754226424340918049
+  slot 2
+  name "core_Atlas"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "core_Atlas"
+
+component GrCoreRing
+  index 1
+  pivot
+    x 0.000000
+    y 6.100000
+    z 0.000000
+  rest
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+
+entity 15845839133675466852
+
+component LocalTransform
+  position
+    x 0.000000
+    y 4.500000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsCollider
+  collider
+    type ColliderType_Box
+    box
+      center
+        x 0.000000
+        y 0.000000
+        z 0.000000
+      half_size
+        x 1.250000
+        y 4.000000
+        z 1.250000
+  filter
+    category 0
+    mask 0
+    group 0
+
+component StaticBody
+  _ 0
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "box_collider"
+
+entity 11213946823530037092
+
+component EcsSubMesh
+  model 17754226424340918049
+  slot 1
+  name "Emit_Light"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "Emit_Light"
+
+entity 7838486025630014105
+
+component EcsSubMesh
+  model 17754226424340918049
+  slot 0
+  name "core_Atlas"
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component EcsParent
+  parent 17754226424340918049
+
+component EntityName
+  name "core_Atlas"

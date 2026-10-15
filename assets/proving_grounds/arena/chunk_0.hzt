@@ -1,0 +1,697 @@
+type EntityChunkBlobAsset
+version 22
+---
+entity 4938469593335611476
+
+component LocalTransform
+  position
+    x -1.500000
+    y 0.000000
+    z 72.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component SceneEntityTag
+  _ 0
+
+component EcsPrefabInstance
+  prefab "proving_grounds/level/prefabs/pedestal.hza" PrefabBlobAsset
+
+override 7741299845143760341 GrPedestal
+  index 1
+  weapon 2
+
+entity 6763898382048187753
+
+component LocalTransform
+  position
+    x 9.000000
+    y 0.000000
+    z 67.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component SceneEntityTag
+  _ 0
+
+component EcsPrefabInstance
+  prefab "proving_grounds/level/prefabs/pedestal.hza" PrefabBlobAsset
+
+override 7741299845143760341 GrPedestal
+  weapon 1
+
+entity 7300000000000007920
+
+component SceneEntityTag
+  _ 0
+
+component EcsStableId
+  id 7300000000000007920
+
+component EntityName
+  name "Settings"
+
+component GrDevSwitches
+  quality 2
+  start false
+  screen 0
+  hold_waves false
+  pin_drones false
+  god false
+  weapon 0
+  ads false
+  fire false
+  pose false
+  pose_x 0.000000
+  pose_y 0.000000
+  pose_z 0.000000
+  pose_yaw 0.000000
+  pose_pitch 0.000000
+  aim false
+  aim_x 0.000000
+  aim_y 0.000000
+  aim_z 0.000000
+  scout false
+  scout_x 0.000000
+  scout_y 0.000000
+  scout_z 0.000000
+  striker false
+  striker_x 0.000000
+  striker_y 0.000000
+  striker_z 0.000000
+  sentinel false
+  sentinel_x 0.000000
+  sentinel_y 0.000000
+  sentinel_z 0.000000
+  freeze false
+  no_fog false
+  no_bloom false
+  no_planar false
+  nan false
+
+component EcsSceneSettings
+  ambient_color
+    r 0.45
+    g 0.53
+    b 0.66
+    a 1
+  ambient_intensity 70.000000
+  shadow_color
+    r 0.000000
+    g 0.000000
+    b 0.000000
+    a 0.000000
+  max_shadow_distance 90.000000
+  env_intensity 0.000000
+  skybox false
+  fog_mode RENDERER_FOG_OFF
+  fog_color
+    r 0.000000
+    g 0.000000
+    b 0.000000
+    a 0.000000
+  fog_density 0.000000
+  fog_start 0.000000
+  fog_end 0.000000
+  clear_color
+    r 0.571000
+    g 0.723000
+    b 0.913000
+    a 1.000000
+  env_specular_override false
+  env_specular_intensity 0.000000
+  skybox_intensity 0.000000
+  shadow_cascade_count 0
+  shadow_cascade_splits
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  shadow_filter SHADOW_FILTER_DEFAULT
+  shadow_fit_bounds
+    min
+      x 0.000000
+      y 0.000000
+      z 0.000000
+    max
+      x 0.000000
+      y 0.000000
+      z 0.000000
+
+component GrDroneConfig
+  types 3
+    label "B1 BATTLE DROID"
+    model_node "B1"
+    health 30.000000
+    score 100
+    scale 1.000000
+    radius 0.550000
+    max_speed 3.000000
+    acceleration 6.000000
+    distance
+      x 10.000000
+      y 22.000000
+    altitude
+      x 2.800000
+      y 7.000000
+    cooldown
+      x 1.200000
+      y 2.200000
+    telegraph 0.300000
+    burst 3
+    burst_interval 0.180000
+    bolt_speed 36.000000
+    bolt_damage 6.000000
+    bolt_radius 0.180000
+    bolt_splash 0.000000
+    bolt_spread 0.060000
+    color
+      r 1
+      g 0.15
+      b 0.1
+      a 1
+
+    label "B2 SUPER BATTLE DROID"
+    model_node "B2"
+    health 140.000000
+    score 300
+    scale 1.000000
+    radius 0.700000
+    max_speed 2.200000
+    acceleration 4.000000
+    distance
+      x 9.000000
+      y 18.000000
+    altitude
+      x 3.500000
+      y 8.500000
+    cooldown
+      x 2.400000
+      y 3.200000
+    telegraph 0.550000
+    burst 5
+    burst_interval 0.110000
+    bolt_speed 34.000000
+    bolt_damage 5.000000
+    bolt_radius 0.180000
+    bolt_splash 0.000000
+    bolt_spread 0.050000
+    color
+      r 1.000000
+      g 0.352941
+      b 0.121569
+      a 1.000000
+
+    label "SENTINEL"
+    model_node "Sentinel"
+    health 280.000000
+    score 450
+    scale 1.700000
+    radius 1.350000
+    max_speed 4.200000
+    acceleration 4.000000
+    distance
+      x 13.000000
+      y 22.000000
+    altitude
+      x 5.000000
+      y 9.500000
+    cooldown
+      x 2.800000
+      y 3.600000
+    telegraph 0.800000
+    burst 1
+    burst_interval 0.000000
+    bolt_speed 17.000000
+    bolt_damage 22.000000
+    bolt_radius 0.420000
+    bolt_splash 3.200000
+    bolt_spread 0.020000
+    color
+      r 0.839216
+      g 0.231373
+      b 1.000000
+      a 1.000000
+  max_attackers 3
+  bolt_capacity 48
+  bolt_max_age 4.000000
+
+component GrWaveConfig
+  waves 3
+    name "CALIBRATION"
+    groups 1
+      type 0
+      count 5
+      delay 0.000000
+      interval 0.700000
+
+    name "ESCALATION"
+    groups 2
+      type 0
+      count 4
+      delay 0.000000
+      interval 0.600000
+
+      type 1
+      count 3
+      delay 3.500000
+      interval 1.100000
+
+    name "SENTINEL PROTOCOL"
+    groups 3
+      type 1
+      count 3
+      delay 0.000000
+      interval 0.900000
+
+      type 2
+      count 2
+      delay 2.500000
+      interval 3.000000
+
+      type 0
+      count 5
+      delay 9.000000
+      interval 0.600000
+  intro_delay 2.500000
+  intermission 5.000000
+  clear_bonus_per_wave 500
+  accuracy_bonus_per_percent 20
+  announce_delay 2.400000
+
+component GrDroneDebug
+  nav_audit false
+  log_interval 1.000000
+  log_drones false
+  damage_per_second 0.000000
+
+component GrLookConfig
+  sky_zenith
+    r 0.035
+    g 0.045
+    b 0.06
+    a 1
+  sky_horizon
+    r 0.13
+    g 0.16
+    b 0.2
+    a 1
+  sky_intensity 0.450000
+  env_intensity 0.600000
+  hemi_sky
+    r 0.42
+    g 0.5
+    b 0.62
+    a 1
+  hemi_ground
+    r 0.04
+    g 0.05
+    b 0.06
+    a 1
+  hemi_intensity 0.090000
+  fog_density 0.016000
+  fog_falloff 0.012000
+  fog_anisotropy 0.650000
+  fog_max_distance 220.000000
+  fog_shaft_intensity 4.000000
+  bloom_strength 1.100000
+  bloom_scatter 0.790000
+  bloom_threshold 1.000000
+  saturation 0.920000
+  contrast 1.100000
+  vignette 0.360000
+  grain 0.035000
+  chromatic 0.002500
+  planar_distortion 0.050000
+
+component GrWeaponConfig
+  guns 3
+    id "rifle"
+    name "DC-15A BLASTER"
+    automatic true
+    damage 14.000000
+    pellets 1
+    falloff false
+    falloff_start 0.000000
+    falloff_end 0.000000
+    falloff_min 0.000000
+    pierce 1
+    fire_rate 10.500000
+    magazine 36
+    shell_reload false
+    reload_time 1.750000
+    cues 3
+      at 0.160000
+      sound 4
+
+      at 0.500000
+      sound 5
+
+      at 0.640000
+      sound 6
+    cue_count 3
+    shell_start 0.000000
+    shell_per 0.000000
+    shell_end 0.000000
+    range 220.000000
+    spread_hip 0.007000
+    spread_zoom 0.001500
+    spread_per_shot 0.003200
+    spread_max 0.035000
+    spread_recovery 0.090000
+    pellet_hip 0.000000
+    pellet_zoom 0.000000
+    recoil_pitch 0.007500
+    recoil_yaw 0.003200
+    recoil_recover 0.650000
+    ads_fov 42.000000
+    scope false
+    tracer_color
+      x 9.000000
+      y 6.000000
+      z 2.600000
+    tracer_speed 320.000000
+    tracer_width 0.035000
+    tracer_beam false
+    glow 3400191
+    muzzle_light 16756848
+    low_color 16734780
+    knockback 2.200000
+    fire_sound 0
+    crosshair 0
+    hip
+      x 0.135000
+      y -0.185000
+      z -0.310000
+    ads_eye_distance 0.240000
+    kick 1.000000
+    heat_per_shot 0.050000
+    vent_cold
+      x 0.200000
+      y 0.880000
+      z 1.000000
+    vent_hot
+      x 1.000000
+      y 0.480000
+      z 0.300000
+    flash_color
+      x 9.000000
+      y 5.000000
+      z 2.000000
+    flash_scale 1.000000
+    magazine_dir
+      x 0.000000
+      y -0.9897283
+      z -0.14296076
+    magazine_travel 0.160000
+
+    id "breacher"
+    name "DC-17M SCATTER"
+    automatic false
+    damage 9.000000
+    pellets 9
+    falloff true
+    falloff_start 8.000000
+    falloff_end 22.000000
+    falloff_min 0.300000
+    pierce 1
+    fire_rate 1.100000
+    magazine 6
+    shell_reload true
+    reload_time 0.000000
+    cues 0
+    cue_count 0
+    shell_start 0.320000
+    shell_per 0.450000
+    shell_end 0.420000
+    range 90.000000
+    spread_hip 0.004000
+    spread_zoom 0.002000
+    spread_per_shot 0.000000
+    spread_max 0.000000
+    spread_recovery 1.000000
+    pellet_hip 0.075000
+    pellet_zoom 0.050000
+    recoil_pitch 0.045000
+    recoil_yaw 0.012000
+    recoil_recover 0.750000
+    ads_fov 56.000000
+    scope false
+    tracer_color
+      x 10.000000
+      y 4.200000
+      z 1.200000
+    tracer_speed 260.000000
+    tracer_width 0.025000
+    tracer_beam false
+    glow 16742943
+    muzzle_light 16751184
+    low_color 16724016
+    knockback 9.000000
+    fire_sound 1
+    crosshair 1
+    hip
+      x 0.130000
+      y -0.178000
+      z -0.300000
+    ads_eye_distance 0.300000
+    kick 1.900000
+    heat_per_shot 0.280000
+    vent_cold
+      x 1.000000
+      y 0.300000
+      z 0.050000
+    vent_hot
+      x 1.000000
+      y 0.780000
+      z 0.450000
+    flash_color
+      x 10.000000
+      y 4.500000
+      z 1.200000
+    flash_scale 1.200000
+    magazine_dir
+      x 0.000000
+      y 0.000000
+      z 0.000000
+    magazine_travel 0.000000
+
+    id "lancer"
+    name "DC-15X SNIPER"
+    automatic false
+    damage 70.000000
+    pellets 1
+    falloff false
+    falloff_start 0.000000
+    falloff_end 0.000000
+    falloff_min 0.000000
+    pierce 4
+    fire_rate 1.600000
+    magazine 5
+    shell_reload false
+    reload_time 2.200000
+    cues 3
+      at 0.140000
+      sound 4
+
+      at 0.460000
+      sound 5
+
+      at 0.620000
+      sound 7
+    cue_count 3
+    shell_start 0.000000
+    shell_per 0.000000
+    shell_end 0.000000
+    range 260.000000
+    spread_hip 0.020000
+    spread_zoom 0.000000
+    spread_per_shot 0.000000
+    spread_max 0.000000
+    spread_recovery 1.000000
+    pellet_hip 0.000000
+    pellet_zoom 0.000000
+    recoil_pitch 0.030000
+    recoil_yaw 0.006000
+    recoil_recover 0.800000
+    ads_fov 21.200001
+    scope true
+    tracer_color
+      x 14.000000
+      y 1.600000
+      z 2.400000
+    tracer_speed 0.000000
+    tracer_width 0.050000
+    tracer_beam true
+    glow 16723263
+    muzzle_light 16730714
+    low_color 16777215
+    knockback 7.000000
+    fire_sound 2
+    crosshair 2
+    hip
+      x 0.130000
+      y -0.180000
+      z -0.330000
+    ads_eye_distance 0.110000
+    kick 1.500000
+    heat_per_shot 0.340000
+    vent_cold
+      x 1.000000
+      y 0.050000
+      z 0.080000
+    vent_hot
+      x 1.000000
+      y 0.620000
+      z 0.660000
+    flash_color
+      x 10.000000
+      y 1.400000
+      z 2.200000
+    flash_scale 1.200000
+    magazine_dir
+      x 0.000000
+      y -0.9897283
+      z -0.14296076
+    magazine_travel 0.160000
+  hip_yaw 0.030000
+  starting_gun 0
+  pickup_reach 1.700000
+  display_scale 1.700000
+  pedestal_hover 0.500000
+  drop_hover 0.950000
+  swap_time 0.550000
+  shell_below
+    x -0.050000
+    y -0.118000
+    z 0.040000
+  shell_mouth
+    x 0.000000
+    y -0.018000
+    z 0.000000
+  shell_push 0.030000
+  pump_travel 0.048000
+  pack_heal 40.000000
+  pack_respawn 25.000000
+  pack_reach 1.100000
+  pack_reach_height 1.400000
+  pack_hover 0.800000
+
+entity 7300000000000015839
+
+component LocalTransform
+  position
+    x 0.000000
+    y 60.000000
+    z 0.000000
+  rotation
+    x 0.4042383
+    y 0.32584694
+    z -0.15678331
+    w 0.8401394
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component WorldTransform
+  position
+    x 0.000000
+    y 60.000000
+    z 0.000000
+  rotation
+    x 0.4042383
+    y 0.32584694
+    z -0.15678331
+    w 0.8401394
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component SceneEntityTag
+  _ 0
+
+component EcsStableId
+  id 7300000000000015839
+
+component EntityName
+  name "Sun"
+
+component EcsDirectionalLight
+  color
+    r 0.62
+    g 0.72
+    b 0.9
+    a 1
+  intensity 48000.000000
+  cast_shadow true
+  shadow_strength 1.000000
+  shadow_bias 0.000000
+  shadow_normal_bias 0.000000
+  source_angle_deg 0.530000
+
+entity 8877423032005579836
+
+component LocalTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component WorldTransform
+  position
+    x 0.000000
+    y 0.000000
+    z 0.000000
+  rotation
+    x 0.000000
+    y 0.000000
+    z 0.000000
+    w 1.000000
+  scale
+    x 1.000000
+    y 1.000000
+    z 1.000000
+
+component SceneEntityTag
+  _ 0
+
+component EcsStableId
+  id 8877423032005579836
+
+component EntityName
+  name "level_bounds"
+
+component GrLevelBounds
+  min
+    x -70.000000
+    y -45.000000
+    z -270.000000
+  max
+    x 70.000000
+    y 45.000000
+    z 90.000000
+
