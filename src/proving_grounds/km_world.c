@@ -498,6 +498,10 @@ hz_internal void km_build(EcsWorld *w, KmWorld *km) {
   MeshBuilderResult res = mesh_builder_finish(&kb->mb, &(MeshBuilderFinishDesc){.renderer = r, .world = w, .alloc = &alloc, .uv_per_metre = 0.5f});
   for (u32 s = 0; s < res.slot_count; s++) {
     HzHandleT(RendererMaterial) mat = renderer_create_material_from_asset(r, assets, asset_get(assets, km->assets[s], MaterialBlobAsset));
+    if (s == KM_MAT_DARK)
+      km->dark_material = mat;
+    if (s == KM_MAT_HULL)
+      km->hull_material = mat;
     for (u32 p = 0; p < res.slots[s].part_count; p++) {
       EcsEntity e = ecs_renderer_spawn(w, r, &(EcsRendererSpawnDesc){.submesh = res.slots[s].parts[p], .material = mat,
                                                        .transform = {.rotation = quat_identity(), .scale = V3_ONE},

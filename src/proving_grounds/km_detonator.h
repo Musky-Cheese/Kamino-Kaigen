@@ -37,6 +37,12 @@ typedef struct KmDetonators {
 } KmDetonators;
 ECS_COMPONENT_TYPEDEF(KmDetonators);
 
+// inside the scope after the drones, before the transforms: the B2 chunks
+void km_feel_schedule(EcsWorld *w);
+// main lane, app_init: the KmFeel resource
+void km_feel_init(EcsWorld *w);
+// main lane, outside the scope: uploads the chunk mesh once
+void km_feel_main(EcsWorld *w);
 // main lane, app_init: the pouch
 void km_detonator_init(EcsWorld *w);
 // inside the scope after the drones and before the transforms: throws, flight, bounces and bursts

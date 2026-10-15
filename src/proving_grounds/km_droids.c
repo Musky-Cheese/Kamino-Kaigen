@@ -33,6 +33,8 @@ typedef struct KmGait {
   f32 phase;
   f32 amount;
   f32 aim_pitch;
+  f32 flinch;      // 0..1: a fresh hit, the torso snaps back
+  f32 flinch_side; // -1..1: the hit pushed it to its right .. left
 } KmGait;
 
 // ---------------------------------------------------------------- rigid transforms
@@ -110,7 +112,10 @@ hz_internal void km_pose_walker(const KmRig *rig, KmGait g, KmPose *out) {
 
   // the upper body leans into the aim about the waist and twists a little with the gait
   v3 waist = rig->pivot[KM_LIMB_CHEST];
-  quat torso_q = quat_mul(quat_axis_angle((v3){0, 1, 0}, m_sinf(ph) * 0.08f * amount), quat_axis_angle((v3){1, 0, 0}, -g.aim_pitch));
+  // a hit snaps the torso back and twists it away from the blow, easing out with the hit flash
+  f32 flinch = m_saturatef(g.flinch);
+  f32 twist = m_sinf(ph) * 0.08f * amount + g.flinch_side * flinch * 0.35f;
+  quat torso_q = quat_mul(quat_axis_angle((v3){0, 1, 0}, twist), quat_axis_angle((v3){1, 0, 0}, -g.aim_pitch - flinch * 0.4f));
   KmRt torso = km_rt_then(km_rt_about(torso_q, waist), body);
   out->limb[KM_LIMB_CHEST] = torso;
   out->limb[KM_LIMB_NECK] = torso;
@@ -217,12 +222,13 @@ ecs_system(km_limb_pose_system, EcsIn(KmLimb), EcsIn(EcsSubMesh), EcsInOut(Local
       const KmClone *c = ecs_component_get(it->world, owner, KmClone);
       if (!c)
         continue;
-      g = (KmGait){c->gait, c->gait_amount, c->aim_pitch};
+      g = (KmGait){c->gait, c->gait_amount, c->aim_pitch, c->hit_flash, 0.0f};
     } else {
       const GrDrone *d = ecs_component_get(it->world, owner, GrDrone);
       if (!d)
         continue;
-      g = (KmGait){d->gait, d->gait_amount, d->aim_pitch};
+      v3 local = quat_rotate(quat_conjugate(quat_rotate_y(d->yaw)), d->hit_dir);
+      g = (KmGait){d->gait, d->gait_amount, d->aim_pitch, d->hit_flash, m_clampf(local.x, -1.0f, 1.0f)};
     }
     KmPose pose;
     km_pose_walker(&rigs->types[l->type], g, &pose);

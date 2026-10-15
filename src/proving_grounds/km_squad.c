@@ -1,11 +1,11 @@
 // Kamino clone squad: troopers that move up with the player, pick droids off from the front and take the droids' fire.
 
-#define KM_CLONE_HEALTH 60.0f
+#define KM_CLONE_HEALTH 90.0f
 #define KM_CLONE_SPEED 3.6f        // walk, m/s
 #define KM_CLONE_RUN 6.0f          // catching up
 #define KM_CLONE_RADIUS 0.4f       // body sphere at the hips against the level
 #define KM_CLONE_RANGE 42.0f       // the farthest droid a trooper engages
-#define KM_CLONE_DAMAGE 9.0f       // a hit, before falloff
+#define KM_CLONE_DAMAGE 7.0f       // a hit, before falloff
 #define KM_CLONE_EYE 0.65f         // above the hips
 
 // formation places around the player, world XZ: the front runs along -Z
@@ -48,8 +48,8 @@ hz_internal void km_clone_fire(KmClone *c, EcsWorld *w, const GrDroneSlot *t, co
   quat q = quat_rotate_y(c->yaw);
   v3 muzzle = v3_add(c->position, quat_rotate(q, (v3){-0.1f, 0.3f, 0.95f}));
   f32 d = v3_distance(eye, t->position);
-  // nearer droids are easier: 35% at 10 m down to 10% at the edge of range; the player does most of the work
-  f32 chance = m_lerpf(0.35f, 0.1f, m_saturatef((d - 10.0f) / (KM_CLONE_RANGE - 10.0f)));
+  // nearer droids are easier: 22% at 10 m down to 6% at the edge of range; the player does most of the work
+  f32 chance = m_lerpf(0.22f, 0.06f, m_saturatef((d - 10.0f) / (KM_CLONE_RANGE - 10.0f)));
   b32 hit = random_f32(&c->rng) < chance;
   v3 aim = t->position;
   if (!hit)
@@ -192,7 +192,7 @@ ecs_system(km_squad_system, EcsInOut(KmClone), EcsOut(WorldTransform), EcsResIn(
           c->burst_left--;
           c->burst_timer = 0.16f;
           if (c->burst_left == 0)
-            c->fire_timer = random_f32_range(&c->rng, 1.0f, 2.2f);
+            c->fire_timer = random_f32_range(&c->rng, 1.4f, 2.8f);
         }
       } else {
         c->fire_timer -= dt;

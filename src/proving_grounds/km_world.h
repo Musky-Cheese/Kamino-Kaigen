@@ -54,6 +54,8 @@ typedef struct KmWorld {
   u32 instances; // renderer instances spawned
   u32 colliders;
   u32 lights;
+  HzHandleT(RendererMaterial) dark_material; // steel trim: the B2 chunks
+  HzHandleT(RendererMaterial) hull_material; // white hull: the B2 armour chunks
 } KmWorld;
 ECS_COMPONENT_TYPEDEF(KmWorld);
 
