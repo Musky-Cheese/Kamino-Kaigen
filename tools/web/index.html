@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Kamino</title>
+    <meta name="description" content="Kamino: defend Tipoca City as a clone trooper. Runs in the browser on WebGPU.">
+    <!-- GitHub Pages cannot send COOP/COEP headers; this service worker adds them so SharedArrayBuffer (engine threads) is allowed -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="coi-serviceworker.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; background: #000; overflow: hidden; }
+        #canvas { display: block; width: 100vw; height: 100vh; }
+        #boot { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+                color: #cfe9ff; font: 14px/1.5 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; pointer-events: none; }
+        #boot .bar { width: 240px; height: 2px; background: #1b2a36; overflow: hidden; }
+        #boot .bar i { display: block; width: 40%; height: 100%; background: #6fd3ff; animation: slide 1.2s ease-in-out infinite; }
+        @keyframes slide { 0% { transform: translateX(-100%);} 100% { transform: translateX(350%);} }
+        #boot small { text-transform: none; letter-spacing: 0; color: #6f8595; }
+        #fail { display: none; position: fixed; inset: 0; align-items: center; justify-content: center; padding: 24px; text-align: center;
+                color: #ffd6d6; background: #000; font: 15px/1.6 system-ui, sans-serif; }
+        #fail a { color: #6fd3ff; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="boot"><div>Deploying to Tipoca City</div><div class="bar"><i></i></div><small>First load downloads about 200 MB of assets.</small></div>
+    <div id="fail"></div>
+    <script type="module">
+        const fail = (html) => { const f = document.getElementById("fail"); f.innerHTML = html; f.style.display = "flex"; document.getElementById("boot").remove(); };
+        if (!navigator.gpu) {
+            fail("This game needs WebGPU.<br>Use a current Chrome or Edge on desktop.");
+        } else if (!crossOriginIsolated) {
+            // the service worker takes effect on its first reload; coi-serviceworker reloads once by itself
+            fail("Waiting for the page to become cross-origin isolated.<br>If this stays, reload the page or <a href=''>click here</a>.");
+        } else {
+            const { createGame } = await import("./main.js");
+            const canvas = document.getElementById("canvas");
+            const p = new URLSearchParams(location.search);
+            const game = createGame({ canvas, commands: p.get("commands") ?? "" });
+            // drop the boot screen once the renderer has produced frames
+            let frames = 0;
+            const tick = () => { if (++frames > 90) { document.getElementById("boot")?.remove(); return; } requestAnimationFrame(tick); };
+            requestAnimationFrame(tick);
+            game.onexit = () => fail("Thanks for playing. <a href=''>Deploy again</a>.");
+        }
+    </script>
+</body>
+</html>
